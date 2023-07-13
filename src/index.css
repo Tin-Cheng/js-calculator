@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: digital, 'Share Tech Mono';
+  color:white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  border: 2px solid #47476b;
+  padding: 5px;
+  width: 320px;
+  position: relative;
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: black;
+  text-align: center;
+  font-size: 30px;
+  
+}
+.display {
+  background-color: black;
+  grid-column:span 4;
+  padding:20px;
+  text-align: right;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10px;
+  border: 1px solid black;
+}
+.number {
+  background-color: grey;
+  text-align: center;
+  grid-column:span 1;
+}
+.zero {
+  background-color: grey;
+  grid-column:span 2;
+}
+.clear {
+  background-color: darkred;
+  grid-column: span 2;
+}
+.equals {
+  background-color: darkcyan;
+  grid-row: span 2;
 }
